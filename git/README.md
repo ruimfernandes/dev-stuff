@@ -1,0 +1,27 @@
+## Git stuff
+
+### Alias
+- alias aa="git add --all"
+- alias bb="git branch"
+- alias bbclear="echo 'clearing deleted branches references using: git remote prune origin'; git remote prune origin"
+- alias bbh='for branch in `git branch | grep -v HEAD`; do echo -e "\e[2;33m"`git show --format="%cr" $branch | head -n 1`"\e[0m" \\t "\e[32m"$branch"\e[0m" \\t "\e[1;31m"`git show --format="%an" $branch | head -n 1`"\e[0m"; done'
+- alias cc="git commit"
+- alias doc="cd; cd Documents"
+- alias gh="cd; cd Documents/Github"
+- alias ghr="open `git remote -v | awk '/fetch/{print $2}' | sed -Ee 's#(git@|git://)#http://#' -e 's@com:@com/@'`| head -n1"
+- alias gui="git gui"
+- alias oo="open ."
+- alias ooalias="cd; vi .zshrc"
+- alias qct="echo 'Running command: git rev-list HEAD --count'; git rev-list HEAD --count"
+- alias qddd="git reset --hard"
+- alias qee="git checkout -"
+- alias qgl="git log --pretty=format:%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cgreen\\ [%cn] --decorate --date=relative -20"
+- alias ql="git pull"
+- alias qlt="git log -1 HEAD"
+- alias qp="git push"
+- alias qrb="git rebase"
+- alias sp="git stash pop"
+- alias ss="git status"
+- alias st="git stash"
+- alias wip="git add --all; git commit -m 'wip';"
+- alias ww="git checkout"

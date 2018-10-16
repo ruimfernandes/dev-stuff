@@ -1,0 +1,3 @@
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=46'
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=10
+bindkey '^[execute' autosuggest-execute
